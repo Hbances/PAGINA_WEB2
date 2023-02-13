@@ -1,0 +1,333 @@
+body{
+    box-sizing: border border-box;
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    font-family: 'noto sans', sans-serif;
+    color: #222222;
+}
+/*clases reutilizables*/
+.btn-verde{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    font-family: 'montserrat',sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #fc5c65;
+    padding: 1rem 2rem;
+    display: inline-block;
+    align-self: center;
+    border-radius: 9px;
+}
+.frase{
+    text-align: center;
+    color: black;
+}
+/*termino los reutilizables*/
+
+/*la seccion de la primera*/
+#primera-seccion{
+    background: /*linear-gradient(rgba(68,13,13,0,35),rgba(38,2,2,0.466)),*/url(imagen11.png) no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+}
+#barra-navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto 5rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    
+}
+#logo{
+    margin: 0%;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-stretch: wider;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+nav>a{
+    text-decoration: none;
+    color:  #fc5c65;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #f6e58d;
+    border-radius: 9px;
+    text-align: center;
+}
+nav>a:hover{
+    color: #44bd32;
+}
+#primera-seccion-contenido{
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#primera-seccion-contenido>p{
+    text-transform: capitalize;
+    font-family: 'montserrat',sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+#primera-seccion-contenido> hr{
+    width: 19.5rem;
+    border-color: #44bd32;
+}
+#primera-seccion-contenido> h1{
+    font-family: 'montserrat',sans-serif;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+/*termina la primera seccion*/
+
+/*comienzo de la segunda seccion*/
+
+#segunda-seccion{
+    background-color:#95a5a6;
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+
+
+/*termino de la segunda seccion*/
+
+/*comienzo de la tercera seccion*/
+
+#tercera-seccion{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-bottom: 5rem;
+}
+#titulo{
+    margin-bottom: 2rem;
+}
+#titulo>h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'montserrat',sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+#titulo>hr{
+    width: 0;
+    border-color: #44db32;
+    
+}
+#container-tercera-seccion{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.img-tercera{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.img-tercera>h6{
+    text-align: center;
+    font-family: 'montserrat',sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.img-tercera>p{
+    margin-bottom: 2rem;
+} 
+.img-tercera >img{
+    max-width: 100%;
+}
+/*termina la seccion tercera*/
+
+/*cuarta seccion*/
+
+#cuarta-seccion{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.905)),url(imagen6.png) no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+#contenedor{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.mitad{
+    width: 50%;
+}
+#cuarta-seccion-derecha>h3{
+    text-transform: uppercase;
+    font-family: 'montserrat',sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+#cuarta-seccion-derecha>hr{
+    width: 4.5rem;
+    border-color: #44bd32;
+    margin-left: 0;
+    margin-bottom: 3rem;
+}
+#cuarta-seccion-derecha>p{
+    margin-bottom: 3.5rem;
+}
+
+/*termina la 4 seccion*/
+
+/*quinta seccion*/
+#quinta-seccion{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+#quinta-seccion-izquierda{
+    flex: 1;
+}
+#quinta-seccion-izquierda>h3{
+    text-transform: uppercase;
+    font-family: 'montserrat',sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    margin-right: 2.4rem;
+}
+#quinta-seccion-izquierda>p{
+    margin-bottom: 2.2rem;
+    margin-right: 2.4rem;
+}
+#quinta-seccion-derecha{
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px 10px;
+    justify-items: center;
+    align-items: center;
+}
+#quinta-seccion-derecha>img{
+    max-width: 100%;
+
+}
+#quinta-seccion-derecha>hr{
+    width: 4.5rem;
+    border-color: #44bd32;
+    margin-left: 0;
+    margin-bottom: 3rem;
+}
+/*termino la quinta seccion*/
+
+/*footer */
+
+footer{
+    background-color: black;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+input[type=text], select {
+    width: 10%;
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: 1rem;
+}
+  
+footer .links a{
+    text-decoration: none;
+    color:  #fc5c65;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #f6e58d;
+    border-radius: 12px;
+    text-align: center;
+}
+.links a:hover{
+    color: #44bd32;
+}
+
+/*contacto*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #f6e58d;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: yellowgreen;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #fc5c65;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+   
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
